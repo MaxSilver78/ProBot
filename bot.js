@@ -207,7 +207,7 @@ client.on('message',async message => {
     
 if(message.author.bot) return;
 if(!credits[message.author.id]) credits[message.author.id] = {
-    credits: 50
+    credits: 1000
 };
 
 let userData = credits[message.author.id];
@@ -217,7 +217,7 @@ fs.writeFile("./creditsCode.json", JSON.stringify(credits), (err) => {
     if (err) console.error(err);
   });
   credits[message.author.id] = {
-      credits: m + 0.5,
+      credits: m + 0.0,
   }
   
     if(message.content.startsWith(prefix + "credit" || prefix + "credits")) {
