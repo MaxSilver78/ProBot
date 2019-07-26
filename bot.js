@@ -2874,7 +2874,6 @@ function play(guild, song) {
 		.on('error', error => console.error(error));//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 	dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 
-	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 
 const adminprefix = "$vip";//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
