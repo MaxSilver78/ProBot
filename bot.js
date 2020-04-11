@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const devs = ['389090790984515594'];
+const devs = ['579377912780816410'];
 const db = require('quick.db');
 const premium = ['579377912780816410']
 const client = new Discord.Client();   
@@ -651,7 +651,7 @@ message.channel.send({embed});
 client.on('message', message => {
     if (message.content.startsWith("G.bans")) {
         message.guild.fetchBans()
-        .then(bans => message.channel.send(`Number of banned persons **${bans.size}** `))
+        .then(bans => message.channel.send(`عدد الاشخاص المبندين **${bans.size}** `))
 }
 });
 client.on('message', message => {
