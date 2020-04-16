@@ -754,7 +754,7 @@ message.channel.send(embed);
 });
 client.on('message', message => {
 if(!message.channel.guild) return;
-if(message.content.startsWith(prefix + 'move')) {
+if(message.content.startsWith(prefix + 'اسحب')) {
  if (message.member.hasPermission("MOVE_MEMBERS")) {
  if (message.mentions.users.size === 0) {
  return message.channel.send("``لاستخدام الأمر اكتب هذه الأمر : " +prefix+ "اسحب [USER]``")
@@ -1036,7 +1036,7 @@ client.on('message', msg => {
 });
 client.on('message', message => {
    if(!message.channel.guild) return;
-if(message.content.startsWith(prefix + 'clear')) {
+if(message.content.startsWith(prefix + 'مسح')) {
 if(!message.channel.guild) return message.channel.send('**This Command is Just For Servers**').then(m => m.delete(5000));
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return      message.channel.send('**You Do not have permission** `MANAGE_MESSAGES`' );
 let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
